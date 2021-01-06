@@ -29,4 +29,11 @@ jobs:
           port: 22
           script: |
             cd go/src/ci-cd-test
+            git pull origin master
+            go mod init
+            go mod vendor
+            go mod tidy
+            kill `pidof main`
+            go build main.go
+            nohup ./main > logs.log &
             
