@@ -35,5 +35,5 @@ jobs:
             go mod tidy
             kill `pidof main`
             go build main.go
-            nohup ./main > logs.log &
+            >nohup ./main > logs.log &
             
