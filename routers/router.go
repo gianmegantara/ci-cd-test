@@ -8,7 +8,7 @@
 package routers
 
 import (
-	"test-CICD/controllers"
+	"ci-cd-test/controllers"
 
 	"github.com/astaxie/beego"
 )

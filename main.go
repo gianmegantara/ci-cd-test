@@ -1,7 +1,7 @@
 package main
 
 import (
-	_ "test-CICD/routers"
+	_ "ci-cd-test/routers"
 
 	"github.com/astaxie/beego"
 )
